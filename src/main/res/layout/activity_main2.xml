@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:foregroundGravity="center_horizontal|fill"
+
+    tools:context=".view.MainActivity2">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginTop="416dp"
+        android:padding="15dp"
+        android:textColorHint="#FFA726"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputpassword"
+            android:layout_width="358dp"
+            android:layout_height="56dp"
+            android:layout_margin="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#F1EEEE"
+            android:hint="@string/prompt_password"
+            android:textColor="#040404"
+            android:textColorHighlight="#FFA726"
+            android:textColorHint="#090909"
+            android:textColorLink="#FFA726"
+            android:textCursorDrawable="@android:color/holo_orange_dark"
+            android:textStyle="bold"
+            android:visibility="visible" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginTop="324dp"
+        android:padding="15dp"
+        android:textColorHint="#FFA726"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputmail"
+            android:layout_width="358dp"
+            android:layout_height="56dp"
+            android:layout_margin="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#F1EEEE"
+            android:hint="E-mail"
+            android:textColorHighlight="#FFA726"
+            android:textColorHint="#0E0E0E"
+            android:textColorLink="#FFA726"
+            android:textCursorDrawable="@android:color/holo_orange_dark"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginTop="232dp"
+        android:padding="15dp"
+        android:textColorHint="#FFA726"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputlastname"
+            android:layout_width="358dp"
+            android:layout_height="56dp"
+            android:layout_margin="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#EDE9E9"
+            android:hint="Lastname"
+            android:textColorHighlight="#FFA726"
+            android:textColorLink="#FFA726"
+            android:textCursorDrawable="@android:color/holo_orange_light"
+            android:textStyle="bold" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="92dp"
+        android:layout_marginTop="48dp"
+        android:padding="15dp"
+        android:textColorHint="#FFA726"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inputname"
+            android:layout_width="358dp"
+            android:layout_height="56dp"
+            android:layout_margin="8dp"
+            android:layout_marginEnd="16dp"
+            android:background="#EDE9E9"
+            android:hint="Name"
+            android:textColorHighlight="#FFA726"
+            android:textColorHint="#FFA726"
+            android:textColorLink="#FFA726"
+            android:textCursorDrawable="@android:color/holo_orange_dark"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="337dp"
+        android:layout_height="67dp"
+        android:layout_marginTop="32dp"
+        android:padding="10dp"
+        android:text="Travel Daily"
+        android:textAlignment="center"
+        android:textColor="#FFA726"
+        android:textSize="40sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="212dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="16dp"
+        android:background="#FDFDFD"
+        android:backgroundTint="#FFA726"
+        android:onClick="sıgnupp"
+        android:text="SIGN UP"
+        android:textColor="#F6F4F4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.344" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

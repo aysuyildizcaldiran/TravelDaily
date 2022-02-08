@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".view.MainActivity3">
+
+    <EditText
+        android:id="@+id/country"
+        android:layout_width="178dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="12dp"
+        android:background="#F1EEEE"
+        android:ems="10"
+        android:hint="Country"
+        android:inputType="textPersonName"
+        android:textColor="#FFA726"
+        android:textColorHint="#FFA726"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="178dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="128dp"
+        android:layout_marginEnd="12dp"
+        android:background="#F1EEEE"
+        android:ems="10"
+        android:hint="City"
+        android:inputType="textPersonName"
+        android:textColor="#FFA726"
+        android:textColorHint="#FFA726"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="178dp"
+        android:layout_height="236dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:onClick="selectimage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <EditText
+        android:id="@+id/aciklama"
+        android:layout_width="357dp"
+        android:layout_height="224dp"
+        android:layout_marginTop="316dp"
+        android:background="#F1EEEE"
+        android:ems="10"
+        android:inputType="textLongMessage"
+        android:textColor="#FFA726"
+        android:textColorHint="#FFA726"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="314dp"
+        android:layout_height="69dp"
+        android:background="#FFA726"
+        android:onClick="save_buttom"
+        android:text="SAVE"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aciklama"
+        app:layout_constraintVertical_bias="0.448" />
+
+    <EditText
+        android:id="@+id/PlaceName"
+        android:layout_width="178dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="12dp"
+        android:background="#F1EEEE"
+        android:ems="10"
+        android:hint="Place Name"
+        android:inputType="textPersonName"
+        android:textColor="#FFA726"
+        android:textColorHint="#FFA726"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

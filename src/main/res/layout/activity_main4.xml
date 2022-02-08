@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    android:orientation="vertical"
+    tools:context=".view.MainActivity4">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFA726"
+        android:backgroundTint="#FFA726"
+        android:scrollbarThumbHorizontal="@android:color/holo_orange_light"
+        android:scrollbarThumbVertical="@android:color/holo_orange_dark"
+        android:textAlignment="viewStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="690dp"
+        android:background="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFA726"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/recyclerView">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="73dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/home"
+            android:isScrollContainer="false"
+            android:onClick="home"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/ic_action_name"
+            android:backgroundTint="#FFFEFC"
+            android:onClick="addplace"
+            app:icon="@drawable/ic_action_name"
+            app:iconSize="90dp"
+            app:iconTint="#FFFBFB" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/settings"
+            android:backgroundTint="#FAF8F6"
+            android:onClick="settings"
+            app:icon="@drawable/settings"
+            app:iconSize="90dp"
+            app:iconTint="#FFFEFE" />
+    </LinearLayout>
+
+</LinearLayout>
